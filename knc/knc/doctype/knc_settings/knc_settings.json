@@ -1,0 +1,35 @@
+{
+ "actions": [],
+ "creation": "2026-06-11 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["section_capacity", "max_active_projects", "column_break_1", "unpaid_so_autoclose_days", "gate_nudge_hours", "section_commerce", "package_item", "package_amount", "column_break_2", "payment_gateway_account", "section_files", "drive_team"],
+ "fields": [
+  {"fieldname": "section_capacity", "fieldtype": "Section Break", "label": "Capacity & Timeline"},
+  {"default": "4", "fieldname": "max_active_projects", "fieldtype": "Int", "label": "Max Active Projects"},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"default": "7", "fieldname": "unpaid_so_autoclose_days", "fieldtype": "Int", "label": "Auto-close Unpaid Sales Orders After (days)"},
+  {"default": "24", "fieldname": "gate_nudge_hours", "fieldtype": "Int", "label": "Gate Nudge After (hours)"},
+  {"fieldname": "section_commerce", "fieldtype": "Section Break", "label": "Commerce"},
+  {"fieldname": "package_item", "fieldtype": "Link", "label": "Package Item", "options": "Item"},
+  {"default": "4800", "fieldname": "package_amount", "fieldtype": "Currency", "label": "Package Amount"},
+  {"fieldname": "column_break_2", "fieldtype": "Column Break"},
+  {"fieldname": "payment_gateway_account", "fieldtype": "Link", "label": "Payment Gateway Account", "options": "Payment Gateway Account"},
+  {"fieldname": "section_files", "fieldtype": "Section Break", "label": "Files"},
+  {"fieldname": "drive_team", "fieldtype": "Data", "label": "Drive Team (for project folders)"}
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-06-11 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "KNC",
+ "name": "KNC Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "email": 1, "print": 1, "read": 1, "role": "System Manager", "share": 1, "write": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

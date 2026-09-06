@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2026-06-16 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "slug",
+  "excerpt",
+  "cover_image",
+  "column_break_meta",
+  "author",
+  "category",
+  "published",
+  "published_on",
+  "section_body",
+  "body"
+ ],
+ "fields": [
+  {"fieldname": "title", "fieldtype": "Data", "in_list_view": 1, "label": "Title", "reqd": 1, "unique": 1},
+  {"fieldname": "slug", "fieldtype": "Data", "label": "Slug", "unique": 1, "read_only": 1, "description": "URL slug — auto-derived from the title."},
+  {"fieldname": "excerpt", "fieldtype": "Small Text", "label": "Excerpt"},
+  {"fieldname": "cover_image", "fieldtype": "Attach Image", "label": "Cover Image"},
+  {"fieldname": "column_break_meta", "fieldtype": "Column Break"},
+  {"fieldname": "author", "fieldtype": "Data", "label": "Author"},
+  {"fieldname": "category", "fieldtype": "Data", "label": "Category"},
+  {"default": "0", "fieldname": "published", "fieldtype": "Check", "in_list_view": 1, "label": "Published"},
+  {"fieldname": "published_on", "fieldtype": "Date", "in_list_view": 1, "label": "Published On"},
+  {"fieldname": "section_body", "fieldtype": "Section Break", "label": "Body"},
+  {"fieldname": "body", "fieldtype": "Long Text", "label": "Body", "description": "Markdown or plain text — rendered on /journal/<slug>."}
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-06-16 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "KNC",
+ "name": "KNC Article",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+ ],
+ "sort_field": "published_on",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

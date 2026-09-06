@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base. The whole brand personality is Light type on true black, so the
+   defaults below carry most of the weight: dark canvas, soft-white body, smooth
+   anchored scrolling. No decoration lives here on purpose. */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg font-sans text-ink-soft antialiased;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #ffffff;
+    color: #0a0a0a;
+  }
+}

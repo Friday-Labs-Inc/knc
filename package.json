@@ -1,0 +1,18 @@
+{
+  "name": "knc",
+  "version": "1.0.0",
+  "description": "The custom Frappe app behind [knc.studio](https://knc.studio) \u2014 onboarding capture, deal-close automation, gate governance, and the Friday AI integration seam, on top of ERPNext.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd frontend && yarn install",
+    "dev": "cd frontend && yarn dev",
+    "build": "cd frontend && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

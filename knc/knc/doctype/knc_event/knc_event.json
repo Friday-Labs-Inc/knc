@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "autoname": "format:KNC-EVT-{######}",
+ "creation": "2026-06-11 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["event_uuid", "event_type", "status", "column_break_1", "subscriber", "retry_count", "delivered_on", "section_payload", "payload", "last_error", "section_refs", "reference_doctype", "reference_name"],
+ "fields": [
+  {"fieldname": "event_uuid", "fieldtype": "Data", "label": "Event UUID", "read_only": 1, "unique": 1},
+  {"fieldname": "event_type", "fieldtype": "Data", "in_list_view": 1, "in_standard_filter": 1, "label": "Event Type", "reqd": 1},
+  {"default": "Pending", "fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "in_standard_filter": 1, "label": "Status", "options": "Pending\nDelivered\nFailed\nSkipped"},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "subscriber", "fieldtype": "Data", "label": "Subscriber"},
+  {"default": "0", "fieldname": "retry_count", "fieldtype": "Int", "label": "Retry Count"},
+  {"fieldname": "delivered_on", "fieldtype": "Datetime", "label": "Delivered On"},
+  {"fieldname": "section_payload", "fieldtype": "Section Break", "label": "Payload"},
+  {"fieldname": "payload", "fieldtype": "JSON", "label": "Payload (v1 schema)"},
+  {"fieldname": "last_error", "fieldtype": "Small Text", "label": "Last Error"},
+  {"collapsible": 1, "fieldname": "section_refs", "fieldtype": "Section Break", "label": "Reference"},
+  {"fieldname": "reference_doctype", "fieldtype": "Data", "label": "Reference DocType"},
+  {"fieldname": "reference_name", "fieldtype": "Data", "label": "Reference Name"}
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-06-11 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "KNC",
+ "name": "KNC Event",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

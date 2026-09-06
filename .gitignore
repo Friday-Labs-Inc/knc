@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.so
+*.pyd
+
+node_modules/
+.DS_Store
+
+# Frappe
+*.pyc
+*.pyo
+.bench
+
+# Frontend build output (rebuilt via `yarn build`; not source)
+knc/public/frontend/
+knc/www/frontend.html

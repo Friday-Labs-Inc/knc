@@ -8,7 +8,7 @@
 The customer surfaces — marketing site, the `/start` onboarding wizard, and the `/portal` — were going to be **Frappe Builder** pages wired to `knc.api.v1` with pasted client scripts (`builder-kit/`). Looked at closely, three things don't hold up:
 
 1. **Builder pages live in the site database, not git.** A page is Builder blocks stored in the `Builder Page` doctype on whatever site you built it on. That breaks our own operating model — "build in the local repo, deploy + verify on Legion." You can't build a page locally in git and ship it; it gets hand-rebuilt per environment.
-2. **Builder can't reach the design bar.** Rajiv's bar is precise type, one disciplined accent, and motion spec'd to the millisecond. Builder's block model can't express that; an SPA can.
+2. **Builder can't reach the design bar.** The Creative Director's bar is precise type, one disciplined accent, and motion spec'd to the millisecond. Builder's block model can't express that; an SPA can.
 3. **The portal is an app, not a page.** Auth-gated, multi-route, real workflow (gates, refinement rounds, day counters, file delivery). That is a frontend application, not a marketing page.
 
 ## The decision

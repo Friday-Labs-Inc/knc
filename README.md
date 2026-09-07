@@ -73,3 +73,7 @@ Inbound (Friday Integration role): `update_task_progress` (with
 bench --site yoursite execute knc.automation.kickoff.run_kickoff \
   --kwargs "{'brief_name': 'KNC-BRIEF-0001'}"
 ```
+
+## License
+
+AGPL-3.0-or-later. See [license.txt](license.txt).

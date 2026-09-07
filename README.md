@@ -1,3 +1,6 @@
+> **Archived.** This repository is a mis-named copy of the RandomPack product. The product lives at
+> [Friday-Labs-Inc/randompack](https://github.com/Friday-Labs-Inc/randompack); Klick N Click is its first customer.
+
 # knc
 
 The custom Frappe app behind [knc.studio](https://knc.studio) —

@@ -1,6 +1,8 @@
-# knc — the RandomPack prototype, renamed (Frappe v15 + ERPNext)
+# knc — a mis-named copy of the RandomPack product (Frappe v15 + ERPNext)
 
-**Status: being folded into `Friday-Labs-Inc/design_studio` on Frappe v16 (epic E1 there), then archived.**
+**Status: ARCHIVED.** RandomPack is the product (`Friday-Labs-Inc/randompack`, Frappe v16); Klick N Click
+is a *customer* of it, not a codebase. This copy exists only because the product was briefly renamed after
+the customer. Its v15 business chain is ported into the product under epic E1 there; nothing else is used.
 Do not start new features here. Bug fixes only if a live site depends on them.
 
 ## What is here (read it, then port it)
@@ -16,5 +18,5 @@ Do not start new features here. Bug fixes only if a live site depends on them.
 - `bench --site knc.localhost run-tests --app knc` (6 modules, 50 tests).
 
 ## Rules
-- Conventional commits, PR template, a human merges. Same definition of done as design_studio.
-- Anything ported to design_studio gets a note in the porting issue and is deleted here in the same PR series.
+- Conventional commits, PR template, a human merges. Same definition of done as randompack.
+- Anything ported to randompack gets a note in the porting issue and is deleted here in the same PR series.
